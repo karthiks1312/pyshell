@@ -1,0 +1,23 @@
+[project]
+name = "shell"
+version = "0.0.1"
+authors = [
+  { name="Karthik", email="karthiks969@gmail.com" },
+]
+description = "A simple Shell"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+pyshell = "pyshell.main:pyshell"
+
+[project.urls]
+Homepage = "https://codingchallenges.fyi/challenges/challenge-shell"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
