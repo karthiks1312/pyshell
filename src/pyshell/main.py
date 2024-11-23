@@ -15,7 +15,7 @@ def ccsh():
                 if len(args) > 1:
                     print("Too many args")
                 else:
-                    path = args[0] if len(args) == 1 else path.home()
+                    path = args[0] if len(args) == 1 else Path.home()
                     chdir(path)
             case 'pwd':
                 if args:
